@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class BattleDevUtils {
 
@@ -26,7 +25,7 @@ public class BattleDevUtils {
 	}
 
 	public static List<Integer> toNumbers(List<String> numbers){
-		return numbers.stream().map(Integer::parseInt).collect(Collectors.toList());
+		return numbers.stream().map(Integer::parseInt).collect(java.util.stream.Collectors.toList());
 	}
 
 	public static Integer[] toNumbers(String... numbers){
