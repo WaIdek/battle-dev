@@ -1,11 +1,11 @@
-package com.wsulima.battledev.nov2020.problem1;
+package com.wsulima.battledev.nov2020.problem4;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Problem_1 {
+public class Problem_4 {
 
 	public static void main(String[] argv) throws Exception {
 		System.out.println(calculate());

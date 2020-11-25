@@ -1,5 +1,6 @@
-package com.wsulima.battledev.nov2020.problem1;
+package com.wsulima.battledev.nov2020.problem5;
 
+import com.wsulima.battledev.nov2020.problem4.Problem_4;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +8,7 @@ import java.io.ByteArrayInputStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class Problem_1Test {
+class Problem_5Test {
 
 	String testInput = String.join("\n"
 			, ""
@@ -24,7 +25,7 @@ class Problem_1Test {
 
 	@Test
 	void testCalculation() throws Exception {
-		String result = Problem_1.calculate();
+		String result = Problem_5.calculate();
 		assertThat(result).isNotNull().isEqualTo(expected);
 	}
 
