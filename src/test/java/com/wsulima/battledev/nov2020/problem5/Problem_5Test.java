@@ -1,6 +1,5 @@
 package com.wsulima.battledev.nov2020.problem5;
 
-import com.wsulima.battledev.nov2020.problem4.Problem_4;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
