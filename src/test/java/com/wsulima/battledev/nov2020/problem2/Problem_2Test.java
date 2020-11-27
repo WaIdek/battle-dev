@@ -10,12 +10,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 class Problem_2Test {
 
 	String testInput = String.join("\n"
-			, ""
-			, ""
-			, ""
+			, "5"
+			, "20:04"
+			, "20:23"
+			, "08:00"
+			, "09:15"
+			, "13:00"
 	);
 
-	String expected = "";
+	String expected = "OK";
 
 	@BeforeEach
 	public void setupInput() {

@@ -16,8 +16,17 @@ public class Problem_2 {
 	}
 
 	private static String calculate(List<String> lines) throws Exception {
-		// TODO .....
-		return "";
+		List<String> messageHours = lines.subList(1, lines.size());
+
+		long total = messageHours.size();
+		long suspicious = messageHours.stream().filter(s -> isSuspicious(s)).count();
+
+		return (suspicious  * 100 / total) > 50 ? "SUSPICIOUS" : "OK";
+	}
+
+	private static boolean isSuspicious(String s) {
+		int hour = Integer.parseInt(s.split(":")[0]);
+		return (hour>=20) || (hour < 8 );
 	}
 
 

@@ -10,12 +10,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 class Problem_3Test {
 
 	String testInput = String.join("\n"
-			, ""
-			, ""
-			, ""
+			, "5"
+			, "1 4"
+			, "3 1"
+			, "4 0"
+			, "2 4"
 	);
 
-	String expected = "";
+	String expected = "1 1 2 1 0 0 0 0 0 0";
 
 	@BeforeEach
 	public void setupInput() {

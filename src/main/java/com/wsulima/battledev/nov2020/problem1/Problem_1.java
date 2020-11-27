@@ -16,8 +16,26 @@ public class Problem_1 {
 	}
 
 	private static String calculate(List<String> lines) throws Exception {
-		// TODO .....
-		return "";
+		List<String> accountNames = lines.subList(1, lines.size());
+
+		int counter = 0;
+		for (String accountName : accountNames) {
+			if(endsWith5Digits(accountName)){
+				counter++;
+			}
+		}
+
+		return "" + counter;
+	}
+
+	private static boolean endsWith5Digits(String accountName) {
+		try {
+			String last5chars = accountName.substring(accountName.length() - 5);
+			Long.parseLong(last5chars);
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
 	}
 
 

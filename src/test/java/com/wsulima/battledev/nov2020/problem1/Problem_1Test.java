@@ -10,12 +10,17 @@ import static org.assertj.core.api.Assertions.assertThat;
 class Problem_1Test {
 
 	String testInput = String.join("\n"
-			, ""
-			, ""
-			, ""
+			, "7"
+			, "h25io"
+			, "gn0mi12345"
+			, "RealDon4321"
+			, "yaNNd3v"
+			, "cup0ft3444455"
+			, "bienvenueCorbier"
+			, "BClukschoco"
 	);
 
-	String expected = "";
+	String expected = "2";
 
 	@BeforeEach
 	public void setupInput() {
